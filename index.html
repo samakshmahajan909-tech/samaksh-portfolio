@@ -1,0 +1,859 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamakshGupta | Azure DevOps Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <span class="loader-text">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">SamakshGupta</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i><span>Home</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i><span>About</span>
+                </a>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-code"></i><span>Skills</span>
+                </a>
+                <a href="#experience" class="nav-link" data-section="experience">
+                    <i class="fas fa-briefcase"></i><span>Experience</span>
+                </a>
+                <a href="#certifications" class="nav-link" data-section="certifications">
+                    <i class="fas fa-certificate"></i><span>Certifications</span>
+                </a>
+                <a href="#gallery" class="nav-link" data-section="gallery">
+                    <i class="fas fa-images"></i><span>Gallery</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i><span>Contact</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting animate-on-scroll">
+                    <span class="greeting-line"></span>
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-name animate-on-scroll">
+                    <span class="name-first">Samaksh</span>
+                    <span class="name-last">Gupta</span>
+                </h1>
+                <div class="hero-title-wrapper animate-on-scroll">
+                    <span class="hero-title-static">I'm a </span>
+                    <span class="hero-title-dynamic" id="typed-text"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <p class="hero-description animate-on-scroll">
+                    Passionate about Cloud Technologies & DevOps | 1+ Year Experience in 
+                    Tech Support at Autodesk | Aspiring Azure DevOps Engineer ready to 
+                    build, automate, and deploy solutions at scale.
+                </p>
+                <div class="hero-buttons animate-on-scroll">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Hire Me</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Explore More</span>
+                    </a>
+                    <a href="resume.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                <div class="hero-socials animate-on-scroll">
+                    <a href="https://linkedin.com/in/samaksh-mahajan-781a90211/" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank" class="social-link" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Samakshgupta48@gmail.com" target="_blank" class="social-link" data-tooltip="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://twitter.com/yourprofile" target="_blank" class="social-link" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-on-scroll">
+                <div class="image-wrapper">
+                    <div class="image-border"></div>
+                    <div class="image-glow"></div>
+                    <img src="images/profile.jpg" alt="SamakshGupta" class="profile-img">
+                    <div class="floating-badge badge-azure">
+                        <i class="fab fa-microsoft"></i>
+                        <span>Azure</span>
+                    </div>
+                    <div class="floating-badge badge-devops">
+                        <i class="fas fa-infinity"></i>
+                        <span>DevOps</span>
+                    </div>
+                    <div class="floating-badge badge-cloud">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-container animate-on-scroll">
+                    <div class="about-image-wrapper">
+                        <img src="images/about.jpg" alt="About Me" class="about-img">
+                        <div class="about-image-overlay">
+                            <div class="experience-badge">
+                                <span class="exp-number">1+</span>
+                                <span class="exp-text">Years<br>Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-cards animate-on-scroll">
+                        <div class="about-card">
+                            <i class="fas fa-headset"></i>
+                            <h3>Tech Support</h3>
+                            <p>1+ Year at Autodesk<br>Education Support</p>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Azure Cloud</h3>
+                            <p>Azure Services<br>& Infrastructure</p>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-infinity"></i>
+                            <h3>DevOps</h3>
+                            <p>CI/CD Pipelines<br>& Automation</p>
+                        </div>
+                    </div>
+                    <div class="about-text animate-on-scroll">
+                        <p>
+                            I'm a technology enthusiast with a strong foundation in technical 
+                            support and customer service, currently working at <strong>Autodesk</strong> 
+                            where I provide education support to customers. With over 
+                            <strong>1 year of hands-on experience</strong> in troubleshooting, 
+                            problem-solving, and technical communication, I've developed a deep 
+                            understanding of how technology serves users.
+                        </p>
+                        <p>
+                            My passion lies in <strong>Azure Cloud</strong> and <strong>DevOps 
+                            practices</strong>. I'm actively building my skills in Azure DevOps, 
+                            CI/CD pipelines, Infrastructure as Code (IaC), containerization, and 
+                            cloud architecture. I believe my support background gives me a unique 
+                            advantage — I understand both the technical and human side of technology.
+                        </p>
+                        <p>
+                            I'm seeking opportunities in the <strong>Azure DevOps</strong> field 
+                            where I can leverage my technical skills, problem-solving abilities, 
+                            and passion for automation to contribute to impactful projects.
+                        </p>
+                    </div>
+                    <div class="about-details animate-on-scroll">
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-user"></i> Name:</span>
+                            <span class="detail-value">Samaksh Gupta</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-envelope"></i> Email:</span>
+                            <span class="detail-value">Samakshgupta48@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-map-marker-alt"></i> Location:</span>
+                            <span class="detail-value">Udhampur, J&k, India</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-briefcase"></i> Current Role:</span>
+                            <span class="detail-value">Tech Support - Autodesk</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-bullseye"></i> Goal:</span>
+                            <span class="detail-value">Azure DevOps Engineer</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fas fa-check-circle"></i> Available:</span>
+                            <span class="detail-value status-available">Open to Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">What I Know</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Skills Filter Tabs -->
+            <div class="skills-tabs animate-on-scroll">
+                <button class="skill-tab active" data-filter="all">All</button>
+                <button class="skill-tab" data-filter="cloud">Cloud & Azure</button>
+                <button class="skill-tab" data-filter="devops">DevOps Tools</button>
+                <button class="skill-tab" data-filter="coding">Coding</button>
+                <button class="skill-tab" data-filter="support">Support & OS</button>
+            </div>
+
+            <div class="skills-grid animate-on-scroll">
+                <!-- Azure Skills -->
+                <div class="skill-card" data-category="cloud">
+                    <div class="skill-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft Azure</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+
+                <div class="skill-card" data-category="cloud">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Azure DevOps</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="65"></div>
+                    </div>
+                    <span class="skill-percentage">65%</span>
+                </div>
+
+                <div class="skill-card" data-category="cloud">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Azure VMs & App Services</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="68"></div>
+                    </div>
+                    <span class="skill-percentage">68%</span>
+                </div>
+
+                <div class="skill-card" data-category="cloud">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Azure Networking</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="55"></div>
+                    </div>
+                    <span class="skill-percentage">55%</span>
+                </div>
+
+                <!-- DevOps Tools -->
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>Docker</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="55"></div>
+                    </div>
+                    <span class="skill-percentage">55%</span>
+                </div>
+
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                    <h3>Kubernetes</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="40"></div>
+                    </div>
+                    <span class="skill-percentage">40%</span>
+                </div>
+
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>CI/CD Pipelines</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="60"></div>
+                    </div>
+                    <span class="skill-percentage">60%</span>
+                </div>
+
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Terraform</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="45"></div>
+                    </div>
+                    <span class="skill-percentage">45%</span>
+                </div>
+
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <h3>YAML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="65"></div>
+                    </div>
+                    <span class="skill-percentage">65%</span>
+                </div>
+
+                <!-- Coding -->
+                <div class="skill-card" data-category="coding">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="55"></div>
+                    </div>
+                    <span class="skill-percentage">55%</span>
+                </div>
+
+                <div class="skill-card" data-category="coding">
+                    <div class="skill-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Bash / PowerShell</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="60"></div>
+                    </div>
+                    <span class="skill-percentage">60%</span>
+                </div>
+
+                <div class="skill-card" data-category="coding">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML / CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+
+                <!-- Support & OS -->
+                <div class="skill-card" data-category="support">
+                    <div class="skill-icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <h3>Windows Server</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+
+                <div class="skill-card" data-category="support">
+                    <div class="skill-icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3>Linux</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="60"></div>
+                    </div>
+                    <span class="skill-percentage">60%</span>
+                </div>
+
+                <div class="skill-card" data-category="support">
+                    <div class="skill-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <div class="skill-card" data-category="support">
+                    <div class="skill-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Troubleshooting</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">My Journey</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item animate-on-scroll" data-side="left">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge work">Work</div>
+                        <h3>Technical Support Engineer</h3>
+                        <h4><i class="fas fa-building"></i> Autodesk (Education Support)</h4>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> Jan 2025 - Present
+                        </span>
+                        <ul class="timeline-details">
+                            <li>Diagnosed and resolved software, system, and configuration-related issues</li>
+                            <li>Performed structured troubleshooting and root cause analysis</li>
+                            <li>Analyzed application errors, environment conflicts, and user setups</li>
+                            <li>Supported cloud-based software platforms and account-related workflows</li>
+                            <li>CAssisted with installation, updates, and software dependencies</li>
+                            <li>Interpreted system behavior, error messages, and technical scenarios</li>
+                            <li>Collaborated with internal teams for advanced issue resolution</li>
+                            <li>Maintained high customer satisfaction through timely resolutions</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Root Cause Analysis</span>
+                            <span>Customer Support</span>
+                            <span>Troubleshooting</span>
+                            <span>Environment Issues</span>
+                            <span>Cloud Platforms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-side="right">
+                    <div class="timeline-dot">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge project">Self-Learning</div>
+                        <h3>Mastering Azure DevOps: From Beginner to Advanced 2026</h3>
+                        <h4><i class="fas fa-graduation-cap"></i> Udemy</h4>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> 2026 - Present
+                        </span>
+                        <ul class="timeline-details">
+                            <li>Learning Azure cloud services and architecture</li>
+                            <li>Practicing CI/CD pipeline creation with Azure DevOps</li>
+                            <li>Hands-on with Docker, Kubernetes, and Terraform</li>
+                            <li>Building personal projects on Azure platform</li>
+                            <li>Preparing for Azure certifications (AZ-900, AZ-400)</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Azure</span>
+                            <span>DevOps</span>
+                            <span>Docker</span>
+                            <span>Terraform</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" data-side="left">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge education">Education</div>
+                        <h3>B.E in Computer Science</h3>
+                        <h4><i class="fas fa-university"></i> Model Institute Of Engineering & Technology (Autonomous)</h4>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar-alt"></i> 2020 - 2024
+                        </span>
+                        <ul class="timeline-details">
+                            <li>Built a strong foundation in computer systems, networking, and software workflows</li>
+                            <li>Developed understanding of operating systems, system architecture, and technical problem-solving</li>
+                            <li>Worked on practical projects and gained exposure to real-world software environmentss</li>
+                            <li>Developed strong interest in cloud technologies, DevOps practices, and automation tools</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Computer Science</span>
+                            <span>Networking</span>
+                            <span>AI-Driven Workflow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">My Achievements</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="cert-grid animate-on-scroll">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="https://img.icons8.com/fluency/96/azure-1.png" alt="Azure">
+                    </div>
+                    <div class="cert-info">
+                        <h3>AZ-900: Azure Fundamentals</h3>
+                        <p>Microsoft</p>
+                        <span class="cert-status completed">
+                            <i class="fas fa-check-circle"></i> Completed
+                        </span>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="https://img.icons8.com/fluency/96/azure-1.png" alt="Azure">
+                    </div>
+                    <div class="cert-info">
+                        <h3>AZ-400: Azure DevOps Engineer</h3>
+                        <p>Microsoft</p>
+                        <span class="cert-status in-progress">
+                            <i class="fas fa-spinner fa-spin"></i> In Progress
+                        </span>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="https://img.icons8.com/color/96/amazon-web-services.png" alt="AWS">
+                    </div>
+                    <div class="cert-info">
+                        <h3>AWS Cloud Practitioner</h3>
+                        <p>Amazon Web Services</p>
+                        <span class="cert-status planned">
+                            <i class="fas fa-clock"></i> Planned
+                        </span>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+
+                <!-- Add more certification cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PHOTO GALLERY / SLIDESHOW ==================== -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">My Moments</span>
+                <h2 class="section-title">Photo Gallery</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Main Slideshow -->
+            <div class="slideshow-container animate-on-scroll">
+                <div class="slideshow-wrapper" id="slideshow">
+                    <div class="slide active">
+                        <img src="images/slide1.jpg" alt="Photo 1">
+                        <div class="slide-caption">
+                            <h3>At Work - Autodesk Office</h3>
+                            <p>Working with amazing team members</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide2.jpg" alt="Photo 2">
+                        <div class="slide-caption">
+                            <h3>Tech Conference 2024</h3>
+                            <p>Learning about latest cloud technologies</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide3.jpg" alt="Photo 3">
+                        <div class="slide-caption">
+                            <h3>Azure Community Meetup</h3>
+                            <p>Networking with cloud professionals</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide4.jpg" alt="Photo 4">
+                        <div class="slide-caption">
+                            <h3>Hackathon Participation</h3>
+                            <p>Building solutions with teammates</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide5.jpg" alt="Photo 5">
+                        <div class="slide-caption">
+                            <h3>Certification Achievement</h3>
+                            <p>Celebrating learning milestones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slideshow Controls -->
+                <button class="slide-btn slide-prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slide-btn slide-next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Slideshow Dots -->
+                <div class="slide-dots" id="slideDots"></div>
+
+                <!-- Progress Bar -->
+                <div class="slide-progress">
+                    <div class="slide-progress-bar" id="slideProgress"></div>
+                </div>
+            </div>
+
+            <!-- Thumbnail Grid -->
+            <div class="gallery-grid animate-on-scroll">
+                <div class="gallery-item" data-slide="0">
+                    <img src="images/slide1.jpg" alt="Thumbnail 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-slide="1">
+                    <img src="images/slide2.jpg" alt="Thumbnail 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-slide="2">
+                    <img src="images/slide3.jpg" alt="Thumbnail 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-slide="3">
+                    <img src="images/slide4.jpg" alt="Thumbnail 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-slide="4">
+                    <img src="images/slide5.jpg" alt="Thumbnail 5">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-prev" id="lightboxPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-next" id="lightboxNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-content">
+                <img src="" alt="Lightbox Image" id="lightboxImg">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Let's Talk</h3>
+                    <p>I'm actively looking for opportunities in Azure DevOps. 
+                       Feel free to reach out if you'd like to connect!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>Samakshgupta48@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9419961983</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Udhampur, J&k, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://linkedin.com/in/samaksh-mahajan-781a90211/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/yourprofile" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/yourprofile" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper textarea-wrapper">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,90 1440,60 L1440,120 L0,120 Z" fill="currentColor"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-name">SamakshGupta</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Aspiring Azure DevOps Engineer | Building the future with Cloud & Automation
+                </p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/samaksh-mahajan-781a90211/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:Samakshgupta48@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2024 SamakshGupta. All rights reserved. | 
+                    Hosted on <i class="fab fa-microsoft"></i> Azure
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
